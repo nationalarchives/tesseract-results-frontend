@@ -1,9 +1,6 @@
-let urls = [
-    'http://localhost:3000/images/test.jpg'
-];
+// Note: the images constant is obtained from images_from_filesystem.js
 
-
-urls.forEach(url => {
+images.forEach(url => {
     Tesseract.recognize(url)
         .then(function (result) {
             console.log(result.text);
